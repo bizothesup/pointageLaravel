@@ -1,0 +1,26 @@
+/*Login*/
+.login-page{
+    background: none;
+    background-image: url("../image/backgroud.png" )  !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10% !important;
+}
+.login-box-body{
+    margin-top: 5%;!important;
+    background:none;
+ font-size: 0;
+    margin-bottom: 0;
+/* font-weight: 300;*/
+}
+.btn-primary_custom{
+    background:#3c3996 !important;
+    border: #3c3996 !important;
+}
+.btn-primary_custom:hover{
+    background:#ffffff !important;
+    color:#3c3996 !important;
+    border: #3c3996;
+}
+.skin-blue .main-header .navbar{background-color:#3c3996 !important;}
