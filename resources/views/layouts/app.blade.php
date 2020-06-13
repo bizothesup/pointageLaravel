@@ -123,5 +123,14 @@
 <div class="section-empty section-item">
     @yield('content')
 </div>
+
+<link rel="stylesheet" href="{{URL::asset('HTWF/scripts/font-awesome/css/font-awesome.min.css')}}">
+<script src="{{URL::asset('HTWF/scripts/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{URL::asset('HTWF/scripts/flexslider/jquery.flexslider-min.js')}}"></script>
+<script src="{{URL::asset('HTWF/scripts/jquery.slimscroll.min.js')}}"></script>
+<script src="{{URL::asset('HTWF/scripts/jquery.tab-accordion.js')}}"></script>
+<script src="{{URL::asset('HTWF/scripts/parallax.min.js')}}"></script>
+
+@yield('script')
 </body>
 </html>
