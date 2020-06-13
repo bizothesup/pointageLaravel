@@ -21,7 +21,7 @@ class CartRfid extends Model
     use SoftDeletes;
 
     public $table = 'card_rfid';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -61,6 +61,9 @@ class CartRfid extends Model
     ];
 
 
-
+    public function employe()
+    {
+    return $this->belongTo(Employe::class);
+    }
 
 }

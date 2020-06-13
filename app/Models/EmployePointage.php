@@ -24,7 +24,7 @@ class EmployePointage extends Model
     use SoftDeletes;
 
     public $table = 'employee_pointage';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -48,7 +48,7 @@ class EmployePointage extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'date-service' => 'string',
+        'date_service' => 'string',
         'num_carte' => 'string',
         'matricule_employe' => 'string',
         'mois' => 'string',
@@ -64,5 +64,11 @@ class EmployePointage extends Model
 
     ];
 
-    
+    public function employe()
+    {
+        return $this->belongTo(Employe::class);
+    }
+
+
+
 }

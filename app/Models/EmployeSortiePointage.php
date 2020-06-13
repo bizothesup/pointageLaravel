@@ -24,7 +24,7 @@ class EmployeSortiePointage extends Model
     use SoftDeletes;
 
     public $table = 'employe_sortie_pointage';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -64,5 +64,9 @@ class EmployeSortiePointage extends Model
     public static $rules = [
     ];
 
-    
+    public function employe()
+    {
+        return $this->belongTo(Employe::class);
+    }
+
 }

@@ -26,7 +26,7 @@ class Employe extends Model
     use SoftDeletes;
 
     public $table = 'employes';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -77,5 +77,14 @@ class Employe extends Model
         'email' => 'required|email|unique:employes',
     ];
 
-    
+    public function carteRfid(){
+        return $this->hasMany(CartRfid::class);
+    }
+
+    public function employePointage(){
+        return $this->hasMany(EmployePointage::class);
+    }
+    public function employePointageSortie(){
+        return $this->hasMany(EmployeSortiePointage::class);
+    }
 }
